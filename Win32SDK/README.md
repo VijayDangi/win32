@@ -11,4 +11,4 @@ Compile code by following command using Microsoft C Compiler
 Using GNU C Compiler on Windows i.e. MinGW
 
       > g++ -D UNICODE -D _UNICODE -c SquareAnimation1.cpp -o SquareAnimation.o
-      > g++ -o SquareAnimation1.exe SquareAnimation1.o -lgdi32 -Wl,--subsystem,windows
+      > g++ -o SquareAnimation1.exe SquareAnimation1.o -lgdi32 -luser32 -lkernel32 -Wl,--subsystem,windows
